@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/HP_Logo_Designed.png" type="image/x-icon">
+    <title>proyecto Harry Potter</title>
+</head>
+<body>
+    <header>
+        <button onclick="cambiarEstilo('gryffindor')">Gryffindor</button>
+        <button onclick="cambiarEstilo('slytherin')">Slytherin</button>
+        <button onclick="cambiarEstilo('hufflepuff')">Hufflepuff</button>
+        <button onclick="cambiarEstilo('ravenclaw')">Ravenclaw</button>
+        <h2>PROYECTO HARRY POTTER</h2>
+        <a href="#seccion1">1 sección</a>
+        <a href="#seccion2">Test de Casa de Hogwarts</a>
+        <a href="#seccion3">3ra sección</a>
+        <a href="">4ta sección</a>
+    </header>
+    <main>
+        <div id="seccion1">
+            <h2>Esta sección puede ser un poco de historia sobre Harry Potter</h2>
+            <br>
+            <h3>Info sobre los libros</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis officiis id ducimus, eius harum, dicta mollitia error amet suscipit ipsum sit iure obcaecati similique optio eaque voluptatum animi at.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed officia itaque fugiat optio debitis voluptatum accusantium error, nulla placeat repellendus, molestias iusto delectus laudantium eum, excepturi adipisci ipsam facere corrupti!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ullam accusamus aliquam illo eveniet perferendis possimus fugit officiis blanditiis, harum placeat ipsa, dolorem quisquam ducimus rerum et alias maxime vitae?</p>
+            <br><br>
+            <h3>Algunas imágenes</h3>
+            <img class="ejemplo" src="imagenes/castillo.jpeg" alt="castillo de Hogwarts">
+            <img class="ejemplo" src="imagenes/escudo de howgarts.jpg" alt="escudo de Hogwarts">
+            <img class="ejemplo" src="imagenes/logo.jpg" alt="logo Harry Potter">
+        </div>
+<!--
+        <div id="seccion2">
+            <h2>Test de Casa de Hogwarts</h2>
+            <form action="resultado.php" method="post">
+              
+                <h3>1. ¿Qué cualidad valoras más en ti mismo/a?</h3>
+                <input type="radio" name="pregunta1" value="a"> Coraje y valentía<br>
+                <input type="radio" name="pregunta1" value="b"> Inteligencia y sabiduría<br>
+                <input type="radio" name="pregunta1" value="c"> Lealtad y amistad<br>
+                <input type="radio" name="pregunta1" value="d"> Ambición y determinación<br>
+
+                <h3>2. ¿Qué tipo de lugar prefieres?</h3>
+                <input type="radio" name="pregunta4" value="a"> Montañas y paisajes agrestes<br>
+                <input type="radio" name="pregunta4" value="b"> Bibliotecas y lugares tranquilos<br>
+                <input type="radio" name="pregunta4" value="c"> Campos y jardines<br>
+                <input type="radio" name="pregunta4" value="d"> Lugares misteriosos y oscuros<br>
+
+                <h3>3. ¿Qué tipo de persona te gustaría ser?</h3>
+                <input type="radio" name="pregunta5" value="a"> Un líder valiente y protector<br>
+                <input type="radio" name="pregunta5" value="b"> Un sabio y perspicaz<br>
+                <input type="radio" name="pregunta5" value="c"> Un amigo leal y confiable<br>
+                <input type="radio" name="pregunta5" value="d"> Un/a ambicioso/a y determinado/a<br>
+
+                <br>
+                <input type="submit" value="Obtener resultado">
+            </form>
+        </div>
+    -->
+
+
+    <!--Gus-->
+        <div id="seccion3">
+            <div class="prompts">
+                <h4>Carta de Hogwarts</h4>
+                <form id="carta-form" method="post" target="_blank" action="javascript:void(0);">
+
+                    <!-- Contenido del formulario de la carta ... -->
+                    <div class="select">
+                        <div class="select-container">
+                            <div class="custom-select">
+                                <select name="title">
+                                    <option selected="" value="Sr.">Sr</option>
+                                    <option value="Sra.">Sra</option>
+                                    <option value="Srta.">Señorita</option>
+                                    <option value="Joven">Joven</option>
+                                </select>
+                                <i class="font-icon down-dir"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Tu nombre</h4>
+                    <div class="text-container">
+                        <input type="text" name="name" autocomplete="given-name" maxlength="25" placeholder="nombre">
+                    </div>
+                    <h4>Apellido</h4>
+                    <div class="text-container">
+                        <input type="text" name="surname" autocomplete="family-name" maxlength="25" placeholder="apellido">
+                    </div>
+                    <h4>Dirección Línea 1</h4>
+                    <div class="text-container">
+                        <input type="text" name="address" autocomplete="address-line1" maxlength="30" placeholder="direccion">
+                    </div>
+                    <h4>Dirección Línea 2</h4>
+                    <div class="text-container">
+                        <input type="text" name="address2" autocomplete="address-line2" maxlength="30" placeholder="casa/dpto">
+                    </div>
+                    <h4>email</h4>
+                    <div class="text-container">
+                        <input type="email" name="email" autocomplete="email" maxlength="50" placeholder="email">
+                    </div>
+                   
+                    <div class="checkboxes">
+                        <div class="checkbox-container">
+                            <label class="custom-inputs">
+                                <input type="checkbox" name="papertex" checked="">
+                                <span class="replacement"></span>
+                                <span class="text">Textura de papel</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="send-button-container">
+                        <button class="button js-send-button">
+                            <span class="text">Proceder</span>
+                            <span class="loader"></span>
+                        </button>
+                        <noscript>
+                            <input type="submit" class="button" value="Proceder">
+                            <style>.js-send-button {display: none}</style>
+                        </noscript>
+                    </div>
+
+                    <div id="carta-container">
+                        <div id="carta-hogwarts">
+                            <img id="carta-imagen" src="imagenes/carta.jpg" alt="Carta de Hogwarts">
+                            <div class="membrete" id="membrete"> <!-- Aquí se mostrará el membrete -->
+                                <!-- El contenido del membrete se actualizará dinámicamente con JavaScript -->
+                            </div>
+                            <div id="carta-texto">
+                                <!-- Aquí se mostrará el texto dinámico -->
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
+<!--Gus-->
+
+  

@@ -1,0 +1,214 @@
+/* Estilos generales */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+
+/* Definición de colores en root */
+:root {
+    --color-gryf01: #740001;
+    --color-gryf02: #AE0001;
+    --color-gryf03: #eeba30;
+    --color-gryf04: #d3a625;
+    --color-gryf05: #000;
+
+    --color-slyt01: #e3e3e3;
+    --color-slyt02: #b0b0b0;
+    --color-slyt03: #009403;
+    --color-slyt04: #006302;
+    --color-slyt05: #002f01;
+
+    --color-huff01: #d4c20e;
+    --color-huff02: #e5d85a;
+    --color-huff03: #767676;
+    --color-huff04: #515151;
+    --color-huff05: #000;
+
+    --color-rav01: #0e1a40;
+    --color-rav02: #222f5b;
+    --color-rav03: #5d5d5d;
+    --color-rav04: #946b2d;
+    --color-rav05: #000;
+
+    --color-fondo: #ffffff; /* Color de fondo predeterminado */
+    --color-texto: #000000; /* Color de texto predeterminado */
+}
+
+/* Estilos globales de página */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para encabezado */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    padding: 5vh;
+    width: 100%;
+    
+}
+
+header a {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    color: #000;
+    border-radius: 15px;
+}
+
+button {
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 300ms;
+}
+
+button:hover {
+    scale: 1.3;
+    transition: all 300ms;
+}
+
+/* Estilos para contenido */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+   
+}
+
+/* Estilos para secciones */
+#seccion1,
+#seccion2,
+#seccion3 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 10px solid var(--color-texto);
+    text-align: center;
+}
+
+/* Estilos para casas */
+.gryffindor {
+    background-color: var(--color-gryf01);
+    color: var(--color-gryf03);
+    transition: all 300ms;
+}
+
+.slytherin {
+    background-color: var(--color-slyt01);
+    color: var(--color-slyt05);
+    transition: all 300ms;
+}
+
+.hufflepuff {
+    background-color: var(--color-huff01);
+    color: var(--color-huff05);
+    transition: all 300ms;
+}
+
+.ravenclaw {
+    background-color: var(--color-rav01);
+    color: var(--color-rav04);
+    transition: all 300ms;
+}
+
+/* Estilos para imágenes */
+.ejemplo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#carta-imagen {
+    display: none;
+}
+
+/* Estilos para la textura de papel */
+.textura-papel {
+    background-image: url('imagenes/carta.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#carta-hogwarts {
+    display: flex;
+    justify-content:center;
+    position: relative;
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+}
+
+#carta-texto {
+    color: #000;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 24px; /* Ajusta el tamaño del texto según tu preferencia */
+    position: absolute;
+    top: 20%; /* Ajusta la posición vertical del texto según tu diseño */
+    left: 30px;
+    right: 30px; /* Añade margen derecho para que el texto no toque los bordes */
+    z-index: 2;
+    line-height: 1.5;
+}
+
+.membrete {
+    text-align: left;
+    width: 60%; 
+    margin-top: 70px;
+    margin-bottom: 5px; /* Agrega margen inferior para separar el membrete del cuerpo */
+}
+
+.cuerpo {
+    text-align: justify;
+    width: 65%;
+}
+p.cuerpo{
+    padding: 10px;
+}
+
+.firma {
+    text-align: left;
+    float: left;
+    width: 40%;
+}
+
+#carta-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+ 
+}
+
+
+#carta-imagen {
+    max-width: 90vw;
+    object-fit: cover; /* Escala la imagen para cubrir todo el contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Coloca la imagen en la capa superior */
+}
+
+
+
+
+  
+
+/*hasta aca gus*/
+  
